@@ -10,63 +10,167 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Go To SleepVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Superman" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GoToSleepVC" customModule="Superman" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Allow notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMc-lw-q09">
-                                <rect key="frame" x="101" y="537" width="140" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDS-km-Cke">
-                                <rect key="frame" x="91" y="457" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcE-J0-YN9">
-                                <rect key="frame" x="77" y="61" width="210" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="What time do you wake up?">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="wakeUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wJ8-Sy-4Zr"/>
-                                </connections>
-                            </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="EiC-Rh-b3g">
-                                <rect key="frame" x="0.0" y="99" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="EiC-Rh-b3g">
+                                <rect key="frame" x="47" y="440" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="580051705.54718006">
                                     <!--2019-05-20 13:28:25 +0000-->
                                 </date>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What time do you go to sleep?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOH-n9-29p">
-                                <rect key="frame" x="55" y="364" width="232" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcw-qI-4Zr">
+                                <rect key="frame" x="180" y="772" width="54" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yKN-QD-rVY" kind="presentation" id="NMB-a6-sTk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What time did you go to sleep yesterday?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY9-Ik-eMX">
+                                <rect key="frame" x="20" y="386.5" width="374" height="23.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wY9-Ik-eMX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0Ir-3f-qW6"/>
+                            <constraint firstItem="Qcw-qI-4Zr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Jm-JU-uYl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wY9-Ik-eMX" secondAttribute="trailing" constant="20" id="5RW-Cm-pKQ"/>
+                            <constraint firstItem="EiC-Rh-b3g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aag-nf-cdl"/>
+                            <constraint firstItem="EiC-Rh-b3g" firstAttribute="top" secondItem="wY9-Ik-eMX" secondAttribute="bottom" constant="30" id="o0Y-68-LuP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qcw-qI-4Zr" secondAttribute="bottom" constant="50" id="p8U-MN-Rxb"/>
+                            <constraint firstItem="wY9-Ik-eMX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sfS-IR-wBC"/>
+                            <constraint firstItem="wY9-Ik-eMX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="vUU-2m-kAP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="wakeUpTimePicker" destination="EiC-Rh-b3g" id="VjL-bl-JPu"/>
+                        <outlet property="goToSleepTimePicker" destination="EiC-Rh-b3g" id="VjL-bl-JPu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+            <point key="canvasLocation" x="-103" y="123"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="O5k-QD-A3c">
+            <objects>
+                <viewController id="LPh-iS-zik" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KPq-gj-DJJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeS-ya-7Zx">
+                                <rect key="frame" x="20" y="332" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UUt-KL-UCn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="Your weight">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="wakeUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lsc-HQ-Jqx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1e-kI-hhm">
+                                <rect key="frame" x="59" y="524" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1B7-sr-qLw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="Allow notifications">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="wakeUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EAV-Tr-EgE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rq4-To-eSv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5FC-Ih-tlq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49" y="-779"/>
+        </scene>
+        <!--Wake UpVC-->
+        <scene sceneID="h5b-rO-HI4">
+            <objects>
+                <viewController id="yKN-QD-rVY" customClass="WakeUpVC" customModule="Superman" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ezb-AI-JCl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="kt3-YB-A6N">
+                                <rect key="frame" x="47" y="440" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="580051705.54718006">
+                                    <!--2019-05-20 13:28:25 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wI8-aD-kkq">
+                                <rect key="frame" x="180" y="772" width="54" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AcF-He-GxE" kind="presentation" id="teB-bb-bhk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What time did you wake up today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAs-Iz-43r">
+                                <rect key="frame" x="20" y="386.5" width="374" height="23.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dAs-Iz-43r" firstAttribute="centerX" secondItem="ezb-AI-JCl" secondAttribute="centerX" id="0hC-Np-FWO"/>
+                            <constraint firstItem="kt3-YB-A6N" firstAttribute="centerX" secondItem="ezb-AI-JCl" secondAttribute="centerX" id="1eH-wA-spj"/>
+                            <constraint firstItem="dAs-Iz-43r" firstAttribute="leading" secondItem="b0R-1H-kbK" secondAttribute="leading" constant="20" id="4Q7-wR-ORl"/>
+                            <constraint firstItem="dAs-Iz-43r" firstAttribute="centerY" secondItem="ezb-AI-JCl" secondAttribute="centerY" constant="-50" id="8Jt-A8-490"/>
+                            <constraint firstItem="b0R-1H-kbK" firstAttribute="trailing" secondItem="dAs-Iz-43r" secondAttribute="trailing" constant="20" id="GfO-vT-j4f"/>
+                            <constraint firstItem="wI8-aD-kkq" firstAttribute="centerX" secondItem="ezb-AI-JCl" secondAttribute="centerX" id="TOM-Xz-Z4i"/>
+                            <constraint firstItem="kt3-YB-A6N" firstAttribute="top" secondItem="dAs-Iz-43r" secondAttribute="bottom" constant="30" id="pbl-KX-vkO"/>
+                            <constraint firstItem="b0R-1H-kbK" firstAttribute="bottom" secondItem="wI8-aD-kkq" secondAttribute="bottom" constant="50" id="yLC-fG-eCH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b0R-1H-kbK"/>
+                    </view>
+                    <connections>
+                        <outlet property="wakeUpTimePicker" destination="kt3-YB-A6N" id="9Y6-MP-LQ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hg8-gJ-FaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ebe-Q7-6Ia">
+            <objects>
+                <viewController id="AcF-He-GxE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3wk-Oq-emC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LZf-1W-6hN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MkZ-8f-GpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1454" y="141"/>
         </scene>
     </scenes>
 </document>
