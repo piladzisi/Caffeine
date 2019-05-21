@@ -39,5 +39,20 @@ class GoToSleepVC: UIViewController {
 //        goToSleepTimePicker?.isHidden = false
 //    }
     
+//    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+//        <#code#>
+//    }
+    
+   // using location change beverages available for the user, if not near coffee machine, show favorites (and option to choose different beverage)
+    
+//    Cameo, Accenture coffee drinks
+//    Volume (ml)    Coffee (kg)
+//    Espresso    40    0,0115
+//    Cafe Latte    40    0,0115
+//    Capuccino    50    0,0115
+//    Black coffee    240    0,0140
+//    Coffee with milk     200    0,0140
+//    Iced Latte    40    0,0115
+
 }
 

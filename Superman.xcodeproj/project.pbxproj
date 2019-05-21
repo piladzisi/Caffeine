@@ -13,6 +13,7 @@
 		4FCC1E732292DD16007E5217 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1E712292DD16007E5217 /* LaunchScreen.storyboard */; };
 		4FCC1E802293DE35007E5217 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1E7F2293DE35007E5217 /* ViewController.swift */; };
 		4FCC1E832293DE8D007E5217 /* WakeUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1E822293DE8D007E5217 /* WakeUpVC.swift */; };
+		4FCC1E85229496C5007E5217 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1E84229496C5007E5217 /* Drink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4FCC1E742292DD16007E5217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FCC1E7F2293DE35007E5217 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4FCC1E822293DE8D007E5217 /* WakeUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpVC.swift; sourceTree = "<group>"; };
+		4FCC1E84229496C5007E5217 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		4FCC1E7A2293DDD7007E5217 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4FCC1E84229496C5007E5217 /* Drink.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				4FCC1E802293DE35007E5217 /* ViewController.swift in Sources */,
 				4FCC1E692292DD16007E5217 /* AppDelegate.swift in Sources */,
 				4FCC1E832293DE8D007E5217 /* WakeUpVC.swift in Sources */,
+				4FCC1E85229496C5007E5217 /* Drink.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96SDQ92SXN;
 				INFOPLIST_FILE = Superman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -328,6 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96SDQ92SXN;
 				INFOPLIST_FILE = Superman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
