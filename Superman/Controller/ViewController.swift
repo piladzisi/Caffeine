@@ -54,5 +54,9 @@ class GoToSleepVC: UIViewController {
 //    Coffee with milk     200    0,0140
 //    Iced Latte    40    0,0115
 
+   // BMI = M/H*H (kg/m)
+    
+    
+    
 }
 
